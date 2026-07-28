@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    tools:context=".AddBook">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- العنوان -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/add_book_title"
+            android:gravity="center"
+            android:textColor="@color/primary"
+            android:textSize="28sp" />
+
+        <!-- حقل اسم الكتاب -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtbname"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/book_name"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- حقل اسم المؤلف -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtbauthor"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/book_author"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- حقل الناشر -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtbpublication"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/book_publisher"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- حقل الكمية -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtquntity"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/book_quantity"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- زر الإضافة -->
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/add_book"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

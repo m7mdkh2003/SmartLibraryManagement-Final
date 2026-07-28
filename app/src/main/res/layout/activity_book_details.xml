@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- أيقونة العودة -->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/back_icon"
+        app:srcCompat="@drawable/right_icons" />
+
+    <!-- العنوان -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/return_book_title"
+            android:textColor="@color/primary"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <!-- حقل اسم الكتاب -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblBookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/book_name"
+            android:textColor="@color/primary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/primary_light"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/txtBookName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="@string/sample_book_name"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- حقل اسم المؤلف -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblBookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/book_author"
+            android:textColor="@color/primary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/primary_light"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/txtBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="@string/sample_book_author"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- حقل الناشر -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblBookPublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/book_publisher"
+            android:textColor="@color/primary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/primary_light"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/txtBookPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="@string/sample_book_publisher"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- حقل اسم العضو -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblMemberName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/member_name"
+            android:textColor="@color/primary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/primary_light"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/txtMemberName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="@string/sample_member_name"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- زر إرجاع الكتاب -->
+    <Button
+        android:id="@+id/btnReturnBook"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/return_book"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+  <!-- خلفية الكتاب -->
+  <path
+      android:fillColor="#2196F3"
+      android:pathData="M19,2L5,2c-1.1,0-2,0.9-2,2v16c0,1.1 0.9,2 2,2h14c1.1,0 2,-0.9 2,-2L21,4c0,-1.1-0.9-2-2-2zM19,20L5,20L5,4h2v8l2.5,-1.5L12,12L12,4h7v16z" />
+
+  <!-- صفحات الكتاب -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M9,10.5L9,4L7,4v8l2.5,-1.5z" />
+
+  <!-- خطوط الكتاب -->
+  <path
+      android:fillColor="#1565C0"
+      android:pathData="M17,8h-4v2h4v-2zM17,12h-4v2h4v-2zM17,16h-4v2h4v-2z" />
+
+</vector>

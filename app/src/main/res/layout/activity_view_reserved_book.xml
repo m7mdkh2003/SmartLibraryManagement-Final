@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/back_icon"
+            app:srcCompat="@drawable/right_icons" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/reserved_books_list"
+                android:textColor="@color/primary_dark"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewReservedBook"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:scrollbars="none"
+            tools:listitem="@layout/reserved_book_item" />
+    </LinearLayout>
+
+    <!-- Navigation Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/primary"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:baselineAligned="false"
+            android:paddingVertical="8dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnhome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/home"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:minHeight="48dp"
+                    app:icon="@drawable/homeicon"
+                    app:iconGravity="textTop"
+                    app:iconPadding="3dp"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/white" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:minHeight="48dp"
+                    app:icon="@drawable/icons8_search_30"
+                    app:iconGravity="textTop"
+                    app:iconPadding="3dp"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/white" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnnotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/notification"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:minHeight="48dp"
+                    app:icon="@drawable/icons8_notification_24"
+                    app:iconGravity="textTop"
+                    app:iconPadding="3dp"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/white" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnstore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/store"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:minHeight="48dp"
+                    app:icon="@drawable/icons8_library_24"
+                    app:iconGravity="textTop"
+                    app:iconPadding="3dp"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/white" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

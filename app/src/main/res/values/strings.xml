@@ -1,0 +1,263 @@
+<resources>
+    <!-- اسم التطبيق -->
+    <string name="app_name">مكتبتي الذكية</string>
+    <string name="app_name_en">Smart Library</string>
+
+    <!-- عناوين الشاشات -->
+    <string name="reserved_book">الكتب المستعارة</string>
+    <string name="reserved_book_en">Reserved Books</string>
+
+    <!-- قائمة التنقل -->
+    <string name="home">الرئيسية</string>
+    <string name="home_en">Home</string>
+
+    <string name="search">بحث</string>
+    <string name="search_en">Search</string>
+
+    <string name="notification">إشعارات</string>
+    <string name="notification_en">Notifications</string>
+
+    <string name="store">المكتبة</string>
+    <string name="store_en">Library</string>
+
+    <!-- شاشة تسجيل الدخول -->
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="login_title_en">Login</string>
+
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="email_hint_en">Email</string>
+
+    <string name="password_hint">كلمة المرور</string>
+    <string name="password_hint_en">Password</string>
+
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="forgot_password_en">Forgot Password?</string>
+
+    <string name="remember_me">تذكرني</string>
+    <string name="remember_me_en">Remember me</string>
+
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_in_en">SIGN IN</string>
+
+    <string name="no_account">ليس لديك حساب؟</string>
+    <string name="no_account_en">Don\'t have an account?</string>
+
+    <string name="sign_up">إنشاء حساب</string>
+    <string name="sign_up_en">Sign up</string>
+
+    <!-- شاشة التسجيل -->
+    <string name="create_account">إنشاء حساب جديد</string>
+    <string name="create_account_en">Create Your Account</string>
+
+    <string name="name_hint">الاسم الكامل</string>
+    <string name="name_hint_en">Full Name</string>
+
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="confirm_password_en">Confirm Password</string>
+
+    <string name="have_account">لديك حساب بالفعل؟</string>
+    <string name="have_account_en">Already have an account?</string>
+
+    <!-- رسائل -->
+    <string name="welcome_message">مرحباً بك في مكتبتي الذكية</string>
+    <string name="welcome_message_en">Welcome to Smart Library</string>
+
+    <string name="fill_details">الرجاء إدخال جميع البيانات</string>
+    <string name="fill_details_en">Please fill all details</string>
+
+    <string name="success">تمت العملية بنجاح</string>
+    <string name="success_en">Operation successful</string>
+
+    <string name="error">حدث خطأ</string>
+    <string name="error_en">An error occurred</string>
+
+    <!-- شاشة إضافة كتاب -->
+    <string name="add_book_title">إضافة كتاب جديد</string>
+    <string name="add_book_title_en">Add New Book</string>
+
+    <string name="book_name">اسم الكتاب</string>
+    <string name="book_name_en">Book Name</string>
+
+    <string name="book_author">اسم المؤلف</string>
+    <string name="book_author_en">Book Author</string>
+
+    <string name="book_publisher">دار النشر</string>
+    <string name="book_publisher_en">Book Publisher</string>
+
+    <string name="book_quantity">الكمية</string>
+    <string name="book_quantity_en">Book Quantity</string>
+
+    <string name="add_book">إضافة الكتاب</string>
+    <string name="add_book_en">Add Book</string>
+
+    <!-- شاشة إضافة عضو -->
+    <string name="add_member_title">إضافة عضو جديد</string>
+    <string name="add_member_title_en">Add New Member</string>
+
+    <string name="member_name">اسم العضو</string>
+    <string name="member_name_en">Member Name</string>
+
+    <string name="member_email">البريد الإلكتروني</string>
+    <string name="member_email_en">Member Email</string>
+
+    <string name="member_phone">رقم الهاتف</string>
+    <string name="member_phone_en">Member Phone</string>
+
+    <string name="member_address">العنوان</string>
+    <string name="member_address_en">Member Address</string>
+
+    <string name="add_member">إضافة العضو</string>
+    <string name="add_member_en">Add Member</string>
+
+    <!-- شاشة تفاصيل الكتاب -->
+    <string name="book_details">تفاصيل الكتاب</string>
+    <string name="book_details_en">Book Details</string>
+
+
+
+    <string name="view_books">عرض الكتب</string>
+    <string name="view_books_en">View Books</string>
+
+    <string name="back_icon">رجوع</string>
+    <string name="back_icon_en">Back</string>
+
+
+    <!-- شاشة إرجاع الكتاب -->
+    <string name="return_book_title">إرجاع الكتاب</string>
+    <string name="return_book_title_en">Return Book</string>
+
+    <string name="return_book">إرجاع الكتاب</string>
+    <string name="return_book_en">RETURN BOOK</string>
+
+    <!-- نصوص تجريبية للعرض -->
+    <string name="sample_book_name">اسم الكتاب</string>
+    <string name="sample_book_author">اسم المؤلف</string>
+    <string name="sample_book_publisher">دار النشر</string>
+    <string name="sample_member_name">اسم العضو</string>
+
+    <!-- شاشة تعديل الكتاب -->
+    <string name="edit_book_title">تعديل الكتاب</string>
+    <string name="edit_book_title_en">Edit Book Details</string>
+
+    <string name="book_id">رقم الكتاب</string>
+    <string name="book_id_en">Book ID</string>
+
+    <string name="sample_book_id">B001</string>
+
+    <string name="availability">متاح للاستعارة</string>
+    <string name="availability_en">Availability</string>
+
+    <string name="update">تحديث</string>
+    <string name="update_en">UPDATE</string>
+
+    <string name="delete">حذف</string>
+    <string name="delete_en">DELETE</string>
+
+    <!-- أيقونات -->
+    <string name="ic_book">أيقونة كتاب</string>
+    <string name="ic_author">أيقونة مؤلف</string>
+    <string name="ic_publisher">أيقونة ناشر</string>
+    <string name="ic_quantity">أيقونة كمية</string>
+
+    <!-- شاشة تعديل العضو -->
+    <string name="edit_member_title">تعديل بيانات العضو</string>
+    <string name="edit_member_title_en">Edit Member Details</string>
+
+    <string name="member_id">رقم العضو</string>
+    <string name="member_id_en">Member ID</string>
+
+    <string name="sample_member_id">M001</string>
+    <string name="sample_member_id_en">M001</string>
+
+    <string name="member_contact">رقم الاتصال</string>
+    <string name="member_contact_en">Member Contact</string>
+
+
+    <!-- الشاشة الرئيسية -->
+    <string name="welcome_back">مرحباً بعودتك</string>
+    <string name="welcome_back_en">Welcome Back</string>
+
+    <!-- أوصاف للصور -->
+    <string name="logo_desc">شعار التطبيق</string>
+    <!-- رسالة الترحيب -->
+    <string name="welcome_library">مرحباً بك في المكتبة</string>
+
+    <string name="search_hint">ابحث عن كتاب أو عضو...</string>
+    <string name="search_hint_en">Search for book or member...</string>
+
+    <string name="books">الكتب</string>
+    <string name="books_en">BOOKS</string>
+
+    <string name="members">الأعضاء</string>
+    <string name="members_en">MEMBERS</string>
+
+    <string name="lend">إعارة</string>
+    <string name="lend_en">LEND</string>
+
+
+    <!-- شاشة الأعضاء -->
+    <string name="member_details">تفاصيل الأعضاء</string>
+    <string name="view_members">عرض الأعضاء</string>
+
+    <!-- شاشة الحجز -->
+    <string name="reserve_book_title">حجز كتاب</string>
+    <string name="search_book_hint">البحث عن كتاب بالاسم</string>
+    <string name="enter_book_name">أدخل اسم الكتاب</string>
+    <string name="select_member">اختر العضو</string>
+    <string name="reserve">حجز</string>
+
+    <!-- قوائم العرض -->
+    <string name="books_list">قائمة الكتب</string>
+
+    <!-- قوائم العرض -->
+    <string name="members_list">قائمة الأعضاء</string>
+
+    <!-- قوائم العرض -->
+    <string name="reserved_books_list">قائمة الكتب المستعارة</string>
+
+
+    <!-- أيقونات -->
+    <string name="book_icon">أيقونة كتاب</string>
+    <string name="return_icon">أيقونة إرجاع</string>
+
+    <!-- الحالة -->
+    <string name="available">متاح</string>
+
+    <!-- أيقونات -->
+    <string name="member_icon">أيقونة عضو</string>
+
+    <!-- بيانات عينات للأعضاء -->
+    <string name="sample_member_email">member@example.com</string>
+    <string name="sample_member_phone">+970 59 000 0000</string>
+    <string name="sample_member_address">دير البلح، غزة</string>
+
+
+    <!-- إجراءات -->
+    <string name="return_action">إرجاع</string>
+
+
+
+    <!-- Final project additions -->
+    <string name="online_books">الكتب الإلكترونية</string>
+    <string name="search_online_books">ابحث في Open Library</string>
+    <string name="online_empty_message">اكتب اسم كتاب لعرض النتائج من Web Service</string>
+    <string name="save_favorite">حفظ في المفضلة</string>
+    <string name="publish_year_value">سنة النشر: %1$s</string>
+    <string name="logout">خروج</string>
+    <string name="not_available">غير متاح</string>
+    <string name="firebase_mode_active">Firebase Authentication وFirestore مفعّلان</string>
+    <string name="local_mode_active">الوضع المحلي يعمل. أضف بيانات Firebase لتفعيل المصادقة السحابية.</string>
+    <string name="book_details_format">الكتاب: %1$s
+
+المؤلف: %2$s
+
+الناشر: %3$s
+
+الكمية: %4$d</string>
+
+    <!-- Replace these values from Firebase project settings. The app still works locally while placeholders remain. -->
+    <string name="firebase_web_api_key" translatable="false">REPLACE_FIREBASE_WEB_API_KEY</string>
+    <string name="firebase_application_id" translatable="false">REPLACE_FIREBASE_ANDROID_APP_ID</string>
+    <string name="firebase_project_id" translatable="false">REPLACE_FIREBASE_PROJECT_ID</string>
+
+</resources>

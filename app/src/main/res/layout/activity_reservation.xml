@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ReservationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/reserve_book_title"
+        android:gravity="center"
+        android:textColor="@color/primary"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/textViewSearchBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/search_book_hint"
+        android:textColor="@color/primary"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:startIconDrawable="@drawable/bookicon"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchBookAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/enter_book_name"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/bookDetailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textViewSelectMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/select_member"
+        android:textColor="@color/primary"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:startIconDrawable="@drawable/icons8_member_50"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <Spinner
+            android:id="@+id/memberSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:paddingStart="20dp"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/reserveButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/reserve"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:padding="20dp"
+    tools:context=".EditMember">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/edit_member_title"
+                android:textColor="@color/primary"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/member_id"
+                android:textColor="@color/primary"
+                android:textSize="14sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:strokeColor="@color/primary_light"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:id="@+id/txtmemberid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/sample_member_id"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:background="@color/background_light" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:startIconDrawable="@drawable/username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtupdatemembername"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/member_name"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:startIconDrawable="@drawable/emailicon"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtupdatememberemail"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/member_email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:startIconDrawable="@drawable/icons8_member_50"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtupdatememberphone"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/member_phone"
+                android:inputType="phone"
+                android:paddingStart="20dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:startIconDrawable="@drawable/icons8_library_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtupdatememberaddress"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/member_address"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnupdatemember"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btndeletemember"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/error"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/delete"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:icon="@drawable/icons8_delete_24"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/white"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
